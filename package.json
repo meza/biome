@@ -5,6 +5,7 @@
   "main": "biome.json",
   "keywords": ["linting", "nodejs", "typescript", "javascript", "css", "formatting", "biome", "reusable-configuration"],
   "author": "Meza",
+  "private": false,
   "exports": {
     ".": "./biome.json"
   },
