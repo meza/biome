@@ -1,0 +1,28 @@
+name: Verify PR
+
+permissions:
+  issues: write
+  checks: write
+  contents: write
+  pull-requests: write
+
+
+on:
+  pull_request:
+  merge_group:
+
+jobs:
+  build:
+    name: 🧪 Verify PR
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 📝 Set up node
+        uses: meza/action-setup-node-pnpm@main
+        with:
+          install: true
+
+      - name: 🔬 Lint
+        run: pnpm lint:ci
+
