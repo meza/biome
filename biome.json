@@ -121,6 +121,13 @@
         "noUnsafeNegation": "error",
         "useGetterReturn": "error",
         "useValidTypeof": "error"
+      },
+      "nursery": {
+        "noNestedTernary": "error",
+        "noTemplateCurlyInString": "error",
+        "noDescendingSpecificity": "error",
+        "noOctalEscape": "error",
+        "noMissingVarFunction": "error"
       }
     }
   },
