@@ -22,7 +22,7 @@
     "@semantic-release/release-notes-generator": "14.0.1",
     "commitlint": "19.5.0",
     "lefthook": "^1.7.18",
-    "pnpm": "9.12.1"
+    "pnpm": "9.14.4"
   },
   "commitlint": {
     "extends": ["@commitlint/config-conventional"],
