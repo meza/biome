@@ -12,7 +12,7 @@ importers:
         specifier: 2.0.5
         version: 2.0.5
       '@commitlint/config-conventional':
-        specifier: ^19.5.0
+        specifier: 19.5.0
         version: 19.5.0
       '@semantic-release/commit-analyzer':
         specifier: 13.0.1
@@ -27,7 +27,7 @@ importers:
         specifier: 19.5.0
         version: 19.5.0(@types/node@22.7.7)(typescript@5.6.3)
       lefthook:
-        specifier: ^1.7.18
+        specifier: 1.7.22
         version: 1.7.22
       pnpm:
         specifier: 10.12.4
