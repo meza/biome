@@ -1,6 +1,6 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
-  "organizeImports": { "enabled": true },
+  "$schema": "https://biomejs.dev/schemas/2.0.5/schema.json",
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "vcs": {
     "enabled": false,
     "clientKind": "git",
@@ -26,8 +26,7 @@
     "attributePosition": "auto"
   },
   "files": {
-    "include": ["**/*.ts", "**/*.css", "**/*.tsx", "**/*.json"],
-    "ignore": ["**/*.snap", "**/node_modules", "**/dist"]
+    "includes": ["**/*.ts", "**/*.css", "**/*.tsx", "**/*.json", "!**/*.snap", "!**/node_modules", "!**/dist"]
   },
   "linter": {
     "enabled": true,
@@ -36,16 +35,16 @@
       "complexity": {
         "noBannedTypes": "error",
         "noExtraBooleanCast": "error",
-        "noMultipleSpacesInRegularExpressionLiterals": "error",
         "noUselessCatch": "error",
         "noUselessLoneBlockStatements": "error",
         "noUselessTernary": "error",
         "noUselessThisAlias": "error",
         "noUselessTypeConstraint": "error",
         "noVoid": "error",
-        "noWith": "error",
         "useArrowFunction": "error",
-        "useLiteralKeys": "error"
+        "useLiteralKeys": "error",
+        "noAdjacentSpacesInRegex": "error",
+        "noCommaOperator": "error"
       },
       "correctness": {
         "noConstAssign": "error",
@@ -56,7 +55,6 @@
         "noInnerDeclarations": "error",
         "noInvalidConstructorSuper": "error",
         "noInvalidUseBeforeDeclaration": "error",
-        "noNewSymbol": "error",
         "noNonoctalDecimalEscape": "error",
         "noPrecisionLoss": "error",
         "noSelfAssign": "error",
@@ -69,24 +67,27 @@
         "noUnsafeOptionalChaining": "error",
         "noUnusedLabels": "error",
         "noUnusedVariables": "error",
-        "useArrayLiterals": "off",
         "useIsNan": "error",
         "useValidForDirection": "error",
-        "useYield": "error"
+        "useYield": "error",
+        "noInvalidBuiltinInstantiation": "error",
+        "useValidTypeof": "error",
+        "noMissingVarFunction": "error"
       },
       "security": { "noGlobalEval": "error" },
       "style": {
-        "noCommaOperator": "error",
         "noNamespace": "off",
         "noParameterAssign": "error",
         "noUselessElse": "error",
-        "noVar": "off",
         "useAsConstAssertion": "error",
         "useBlockStatements": "error",
         "useCollapsedElseIf": "error",
         "useConst": "error",
         "useShorthandAssign": "error",
-        "useSingleVarDeclarator": "off"
+        "useSingleVarDeclarator": "off",
+        "useArrayLiterals": "off",
+        "noNestedTernary": "error",
+        "noDescendingSpecificity": "error"
       },
       "suspicious": {
         "noAssignInExpressions": "error",
@@ -95,7 +96,6 @@
         "noClassAssign": "error",
         "noCompareNegZero": "error",
         "noConfusingLabels": "error",
-        "noConsoleLog": "off",
         "noControlCharactersInRegex": "error",
         "noDebugger": "error",
         "noDoubleEquals": "error",
@@ -120,15 +120,13 @@
         "noUnsafeDeclarationMerging": "error",
         "noUnsafeNegation": "error",
         "useGetterReturn": "error",
-        "useValidTypeof": "error"
-      },
-      "nursery": {
-        "noNestedTernary": "error",
+        "noWith": "error",
+        "noVar": "off",
+        "noConsole": { "level": "off", "options": { "allow": ["log"] } },
         "noTemplateCurlyInString": "error",
-        "noDescendingSpecificity": "error",
-        "noOctalEscape": "error",
-        "noMissingVarFunction": "error"
-      }
+        "noOctalEscape": "error"
+      },
+      "nursery": {}
     }
   },
   "json": {
@@ -153,7 +151,7 @@
   },
   "overrides": [
     {
-      "include": ["**/*.test.ts", "**/*.test.tsx", "test/**/*.ts", "test/**/*.tsx"],
+      "includes": ["**/*.test.ts", "**/*.test.tsx", "**/test/**/*.ts", "**/test/**/*.tsx"],
       "linter": {
         "rules": {
           "correctness": { "noInvalidUseBeforeDeclaration": "off" },
