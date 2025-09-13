@@ -28,7 +28,7 @@
     "@commitlint/config-conventional": "19.8.1",
     "@semantic-release/commit-analyzer": "13.0.1",
     "@semantic-release/npm": "12.0.2",
-    "@semantic-release/release-notes-generator": "14.0.3",
+    "@semantic-release/release-notes-generator": "14.1.0",
     "commitlint": "19.8.1",
     "lefthook": "1.12.3",
     "pnpm": "10.15.1"
