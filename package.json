@@ -30,7 +30,7 @@
     "@semantic-release/npm": "13.1.2",
     "@semantic-release/release-notes-generator": "14.1.0",
     "commitlint": "20.1.0",
-    "lefthook": "2.0.7",
+    "lefthook": "2.0.8",
     "pnpm": "10.24.0"
   },
   "commitlint": {
