@@ -28,7 +28,7 @@ jobs:
         run: pnpm lint
 
       - name: Semantic Release
-        uses: cycjimmy/semantic-release-action@v4
+        uses: cycjimmy/semantic-release-action@v6
         id: semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
