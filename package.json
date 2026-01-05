@@ -24,7 +24,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@biomejs/biome": "^2.3.11",
+    "@biomejs/biome": "2.3.11",
     "@commitlint/config-conventional": "20.0.0",
     "@semantic-release/commit-analyzer": "^13.0.1",
     "@semantic-release/npm": "^13.1.3",
