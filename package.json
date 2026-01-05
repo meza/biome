@@ -18,6 +18,9 @@
   "exports": {
     ".": "./biome.json"
   },
+  "repository": {
+    "url": "https://github.com/meza/biome"
+  },
   "scripts": {
     "lint": "biome check --fix",
     "lint:ci": "biome ci --reporter=github ."
