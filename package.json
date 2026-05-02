@@ -32,7 +32,7 @@
     "@semantic-release/commit-analyzer": "13.0.1",
     "@semantic-release/npm": "13.1.5",
     "@semantic-release/release-notes-generator": "14.1.0",
-    "commitlint": "20.5.0",
+    "commitlint": "20.5.2",
     "lefthook": "2.1.6",
     "pnpm": "10.33.2"
   },
