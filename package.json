@@ -34,7 +34,7 @@
     "@semantic-release/release-notes-generator": "14.1.0",
     "commitlint": "20.5.2",
     "lefthook": "2.1.6",
-    "pnpm": "10.33.2"
+    "pnpm": "11.0.8"
   },
   "commitlint": {
     "extends": [
