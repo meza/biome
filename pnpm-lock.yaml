@@ -30,8 +30,8 @@ importers:
         specifier: 2.1.8
         version: 2.1.8
       pnpm:
-        specifier: 11.2.0
-        version: 11.2.0
+        specifier: 11.2.1
+        version: 11.2.1
 
 packages:
 
@@ -1250,8 +1250,8 @@ packages:
     resolution: {integrity: sha512-C+VUP+8jis7EsQZIhDYmS5qlNtjv2yP4SNtjXK9AP1ZcTRlnSfuumaTnRfYZnYgUUYVIKqL0fRvmUGDV2fmp6g==}
     engines: {node: '>=4'}
 
-  pnpm@11.2.0:
-    resolution: {integrity: sha512-zdfjTqDSN77T+onmMxhQJ+Ps2tmM50UwMvTU2DwQy3uFua/oU0BIqwo8wQIovdXjL19iLQXWblj0YXf+VgHqsQ==}
+  pnpm@11.2.1:
+    resolution: {integrity: sha512-TEwUKydjSNoB05kHzOL0C/YSgSEqDkMpXumIBV1QzOcoq36cGB4lLkvOOk8Zuhz/GnWx4uD9axe6C+WYpeRURg==}
     engines: {node: '>=22.13'}
     hasBin: true
 
@@ -2693,7 +2693,7 @@ snapshots:
       find-up: 2.1.0
       load-json-file: 4.0.0
 
-  pnpm@11.2.0: {}
+  pnpm@11.2.1: {}
 
   pretty-ms@9.1.0:
     dependencies:
