@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.3.11/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.4.15/schema.json",
   "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "vcs": {
     "enabled": false,
@@ -34,6 +34,19 @@
       "recommended": false,
       "complexity": {
         "noBannedTypes": "error",
+        "noExcessiveCognitiveComplexity": {
+          "level": "error",
+          "options": {
+            "maxAllowedComplexity": 15
+          }
+        },
+        "noExcessiveLinesPerFunction": {
+          "level": "error",
+          "options": {
+            "maxLines": 80,
+            "skipBlankLines": true
+          }
+        },
         "noExtraBooleanCast": "error",
         "noUselessCatch": "error",
         "noUselessLoneBlockStatements": "error",
@@ -72,7 +85,8 @@
         "useYield": "error",
         "noInvalidBuiltinInstantiation": "error",
         "useValidTypeof": "error",
-        "noMissingVarFunction": "error"
+        "noMissingVarFunction": "error",
+        "noNestedComponentDefinitions": "error"
       },
       "security": { "noGlobalEval": "error" },
       "style": {
