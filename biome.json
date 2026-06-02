@@ -1,6 +1,20 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.4.15/schema.json",
-  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": {
+          "level": "on",
+          "options": {
+            "groups": [{ "type": true }]
+          }
+        },
+        "noDuplicateClasses": "on",
+        "useSortedAttributes": "on",
+        "useSortedProperties": "on"
+      }
+    }
+  },
   "vcs": {
     "enabled": false,
     "clientKind": "git",
@@ -8,6 +22,9 @@
     "defaultBranch": "main"
   },
   "css": {
+    "parser": {
+      "cssModules": true
+    },
     "formatter": {
       "enabled": true,
       "indentStyle": "space",
@@ -76,6 +93,7 @@
         "noInvalidUseBeforeDeclaration": "error",
         "noNonoctalDecimalEscape": "error",
         "noPrecisionLoss": "error",
+        "noPrivateImports": "error",
         "noReactPropAssignments": "error",
         "noRenderReturnValue": "error",
         "noSelfAssign": "error",
@@ -107,6 +125,7 @@
         "useExhaustiveDependencies": "error",
         "useHookAtTopLevel": "error",
         "useIsNan": "error",
+        "useJsonImportAttributes": "error",
         "useJsxKeyInIterable": "error",
         "useParseIntRadix": "error",
         "useUniqueElementIds": "error",
@@ -123,6 +142,13 @@
         "noDangerouslySetInnerHtmlWithChildren": "error",
         "noGlobalEval": "error",
         "noSecrets": "error"
+      },
+      "performance": {
+        "noAccumulatingSpread": "error",
+        "noAwaitInLoops": "warn",
+        "noDynamicNamespaceImportAccess": "error",
+        "noUnwantedPolyfillio": "error",
+        "useTopLevelRegex": "error"
       },
       "style": {
         "noNamespace": "off",
@@ -169,6 +195,7 @@
         "noDuplicateCase": "error",
         "noDuplicateClassMembers": "error",
         "noDuplicateCustomProperties": "error",
+        "noDuplicateDependencies": "error",
         "noDuplicateElseIf": "error",
         "noDuplicateFontNames": "error",
         "noDuplicateJsxProps": "error",
@@ -184,6 +211,7 @@
         "noExplicitAny": "error",
         "noExtraNonNullAssertion": "error",
         "noFallthroughSwitchClause": "error",
+        "noExportsInTest": "error",
         "noFocusedTests": "error",
         "noFunctionAssign": "error",
         "noGlobalAssign": "error",
@@ -192,6 +220,7 @@
         "noImplicitAnyLet": "error",
         "noImportantInKeyframe": "error",
         "noImportAssign": "error",
+        "noImportCycles": "warn",
         "noIrregularWhitespace": "error",
         "noLabelVar": "error",
         "noMisleadingCharacterClass": "error",
@@ -293,6 +322,7 @@
     "jsxRuntime": "reactClassic",
     "formatter": {
       "quoteStyle": "single",
+      "jsxQuoteStyle": "single",
       "enabled": true,
       "semicolons": "always",
       "quoteProperties": "asNeeded",
