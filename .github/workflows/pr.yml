@@ -16,7 +16,7 @@ jobs:
     name: 🧪 Verify PR
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6.0.2
+      - uses: actions/checkout@v6.0.3
 
       - name: 📝 Set up node
         uses: meza/action-setup-node-pnpm@main
