@@ -1,4 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>stateshifters/renovate-common", "customManagers:biomeVersions"]
+  "extends": ["github>stateshifters/renovate-common", "customManagers:biomeVersions"],
+  "packageRules": [
+    {
+      "matchManagers": ["biomeVersions"],
+      "commitMessagePrefix": "fix"
+    }
+  ]
 }
