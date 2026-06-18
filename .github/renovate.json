@@ -1,4 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>stateshifters/renovate-common", "customManagers:biomeVersions"]
+  "extends": ["github>stateshifters/renovate-common", "customManagers:biomeVersions"],
+  "postUpgradeTasks": {
+    "commands": ["npx biome migrate"],
+    "fileFilters": ["pnpm-lock.yaml"]
+  }
 }
