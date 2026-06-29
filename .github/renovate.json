@@ -3,7 +3,7 @@
   "extends": ["github>stateshifters/renovate-common", "customManagers:biomeVersions"],
   "packageRules": [
     {
-      "matchManagers": ["biomeVersions"],
+      "matchPackageNames": ["@biomejs/biome"],
       "commitMessagePrefix": "fix"
     }
   ]
