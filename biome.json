@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.4.16/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.5.0/schema.json",
   "assist": {
     "actions": {
       "source": {
@@ -48,7 +48,7 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": false,
+      "preset": "none",
       "complexity": {
         "noBannedTypes": "error",
         "noExcessiveCognitiveComplexity": {
@@ -141,7 +141,8 @@
         "noDangerouslySetInnerHtml": "error",
         "noDangerouslySetInnerHtmlWithChildren": "error",
         "noGlobalEval": "error",
-        "noSecrets": "error"
+        "noSecrets": "error",
+        "noScriptUrl": "warn"
       },
       "performance": {
         "noAccumulatingSpread": "error",
@@ -175,7 +176,8 @@
         "useThrowOnlyError": "error",
         "useArrayLiterals": "off",
         "noNestedTernary": "error",
-        "noDescendingSpecificity": "error"
+        "noDescendingSpecificity": "error",
+        "useErrorCause": "warn"
       },
       "suspicious": {
         "noArrayIndexKey": "error",
@@ -254,7 +256,9 @@
         "useErrorMessage": "error",
         "useGuardForIn": "error",
         "useIsArray": "error",
-        "useIterableCallbackReturn": "error"
+        "useIterableCallbackReturn": "error",
+        "noLeakedRender": "warn",
+        "noUnnecessaryConditions": "warn"
       },
       "a11y": {
         "noAccessKey": "error",
@@ -296,15 +300,11 @@
       "nursery": {
         "noComponentHookFactories": "warn",
         "noFloatingPromises": "warn",
-        "noLeakedRender": "warn",
         "noMisleadingReturnType": "warn",
         "noMisusedPromises": "warn",
         "noReactStringRefs": "warn",
-        "noScriptUrl": "warn",
-        "noUnnecessaryConditions": "warn",
         "noUnsafePlusOperands": "warn",
         "useAwaitThenable": "warn",
-        "useErrorCause": "warn",
         "useExhaustiveSwitchCases": "warn",
         "useIframeSandbox": "warn",
         "useNullishCoalescing": "warn",
