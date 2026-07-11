@@ -4,16 +4,10 @@
   "packageRules": [
     {
       "matchPackageNames": ["@biomejs/biome"],
-      "commitMessagePrefix": "fix"
-    }
-  ],
-  "postUpgradeTasks": {
-    "packageRules": [
-      {
-        "matchPackageNames": ["@biomejs/biome"],
-        "commands": ["pnpm exec biome migrate --write"]
+      "commitMessagePrefix": "fix",
+      "postUpgradeTasks": {
+        "command": "pnpm exec biome migrate --write"
       }
-    ],
-    "fileFilters": ["pnpm-lock.yaml"]
-  }
+    }
+  ]
 }
