@@ -6,7 +6,7 @@
       "matchPackageNames": ["@biomejs/biome"],
       "commitMessagePrefix": "fix",
       "postUpgradeTasks": {
-        "command": "pnpm exec biome migrate --write"
+        "commands": ["pnpm exec biome migrate --write"]
       }
     }
   ]
