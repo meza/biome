@@ -4,7 +4,7 @@
   "packageRules": [
     {
       "matchPackageNames": ["@biomejs/biome"],
-      "commitMessagePrefix": "fix",
+      "semanticCommitType": "fix",
       "postUpgradeTasks": {
         "commands": ["pnpm exec biome migrate --write"]
       }
