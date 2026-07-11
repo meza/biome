@@ -11,7 +11,7 @@
     "packageRules": [
       {
         "matchPackageNames": ["@biomejs/biome"],
-        "commands": ["npx biome migrate"]
+        "commands": ["pnpm exec biome migrate --write"]
       }
     ],
     "fileFilters": ["pnpm-lock.yaml"]
