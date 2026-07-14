@@ -5,6 +5,7 @@
     {
       "matchPackageNames": ["@biomejs/biome"],
       "semanticCommitType": "fix",
+      "minimumReleaseAge": "7 days",
       "postUpgradeTasks": {
         "commands": ["pnpm exec biome migrate --write"]
       }
