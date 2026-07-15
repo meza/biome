@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
 
       - name: 📝 Set up node
-        uses: meza/action-setup-node-pnpm@71aff4165b6066ca9cc0748cb0859786b78bf35f # main
+        uses: meza/action-setup-node-pnpm@a2f4240b2835ddfaeb13b353e996e93832b5f47c # main
         with:
           install: true
 
