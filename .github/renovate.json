@@ -1,12 +1,13 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>stateshifters/renovate-common", "customManagers:biomeVersions"],
+  "extends": ["github>stateshifters/renovate-common"],
   "packageRules": [
     {
       "matchPackageNames": ["@biomejs/biome"],
       "semanticCommitType": "fix",
       "minimumReleaseAge": "7 days",
       "rangeStrategy": "pin",
+      "automerge": true,
       "postUpgradeTasks": {
         "commands": ["pnpm exec biome migrate --write"]
       }
