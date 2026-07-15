@@ -27,10 +27,10 @@
   },
   "license": "MIT",
   "peerDependencies": {
-    "@biomejs/biome": "2.5.2"
+    "@biomejs/biome": "2.5.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.2",
+    "@biomejs/biome": "2.5.3",
     "@commitlint/config-conventional": "21.2.0",
     "@semantic-release/commit-analyzer": "13.0.1",
     "@semantic-release/npm": "13.1.5",
