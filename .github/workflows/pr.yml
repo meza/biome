@@ -36,6 +36,7 @@ jobs:
       - name: Enable Corepack
         run: |
           corepack enable
+          pnpm i --frozen-lockfile
 
       - name: 🔬 Lint
         run: pnpm lint:ci
