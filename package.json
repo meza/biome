@@ -40,7 +40,7 @@
     "commitlint": "21.2.1",
     "lefthook": "2.1.10",
     "pnpm": "11.15.1",
-    "semantic-release": "25.0.8"
+    "semantic-release": "25.0.9"
   },
   "commitlint": {
     "extends": [
