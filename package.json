@@ -24,7 +24,8 @@
   },
   "scripts": {
     "lint": "biome check --fix",
-    "lint:ci": "biome ci --reporter=github ."
+    "lint:ci": "biome ci --reporter=github .",
+    "release": "semantic-release"
   },
   "license": "MIT",
   "peerDependencies": {
