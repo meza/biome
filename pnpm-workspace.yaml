@@ -1,5 +1,6 @@
 # Approved dependency build scripts (see `pnpm approve-builds`)
 allowBuilds:
   lefthook: true
+  pnpm: true
 
 minimumReleaseAge: 10080
