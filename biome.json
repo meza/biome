@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.5.15/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.6.2/schema.json",
   "assist": {
     "actions": {
       "source": {
@@ -134,7 +134,9 @@
         "noInvalidBuiltinInstantiation": "error",
         "useValidTypeof": "error",
         "noMissingVarFunction": "error",
-        "noNestedComponentDefinitions": "error"
+        "noNestedComponentDefinitions": "error",
+        "noComponentHookFactories": "warn",
+        "useReactAsyncServerFunction": "warn"
       },
       "security": {
         "noBlankTarget": "error",
@@ -142,7 +144,8 @@
         "noDangerouslySetInnerHtmlWithChildren": "error",
         "noGlobalEval": "error",
         "noSecrets": "error",
-        "noScriptUrl": "warn"
+        "noScriptUrl": "warn",
+        "useIframeSandbox": "warn"
       },
       "performance": {
         "noAccumulatingSpread": "error",
@@ -258,7 +261,8 @@
         "useIsArray": "error",
         "useIterableCallbackReturn": "error",
         "noLeakedRender": "warn",
-        "noUnnecessaryConditions": "warn"
+        "noUnnecessaryConditions": "warn",
+        "noReactStringRefs": "warn"
       },
       "a11y": {
         "noAccessKey": "error",
@@ -298,17 +302,13 @@
         "useValidLang": "error"
       },
       "nursery": {
-        "noComponentHookFactories": "warn",
         "noFloatingPromises": "warn",
         "noMisleadingReturnType": "warn",
         "noMisusedPromises": "warn",
-        "noReactStringRefs": "warn",
         "noUnsafePlusOperands": "warn",
         "useAwaitThenable": "warn",
         "useExhaustiveSwitchCases": "warn",
-        "useIframeSandbox": "warn",
-        "useNullishCoalescing": "warn",
-        "useReactAsyncServerFunction": "warn"
+        "useNullishCoalescing": "warn"
       }
     }
   },
