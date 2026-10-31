@@ -18,7 +18,7 @@
   "exports": {
     ".": "./biome.json"
   },
-  "packageManager": "pnpm@12.11.2",
+  "packageManager": "pnpm@12.15.0",
   "repository": {
     "url": "https://github.com/meza/biome"
   },
