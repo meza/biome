@@ -45,6 +45,15 @@
   "files": {
     "includes": ["**/*.ts", "**/*.css", "**/*.tsx", "**/*.json", "!**/*.snap", "!**/node_modules", "!**/dist"]
   },
+  "markdown": {
+    "formatter": {
+      "lineWidth": 100,
+      "proseWrap": "always"
+    },
+    "linter": {
+      "enabled": true
+    }
+  },
   "linter": {
     "enabled": true,
     "rules": {
@@ -262,7 +271,8 @@
         "useIterableCallbackReturn": "error",
         "noLeakedRender": "warn",
         "noUnnecessaryConditions": "warn",
-        "noReactStringRefs": "warn"
+        "noReactStringRefs": "warn",
+        "noEmptySource": "error"
       },
       "a11y": {
         "noAccessKey": "error",
@@ -308,7 +318,12 @@
         "noUnsafePlusOperands": "warn",
         "useAwaitThenable": "warn",
         "useExhaustiveSwitchCases": "warn",
-        "useNullishCoalescing": "warn"
+        "useNullishCoalescing": "warn",
+        "useConsistentHeadingLevel": "error",
+        "useConsistentUnicodeBom": "error",
+        "useSingleTopLevelHeading": "error",
+        "useTopLevelHeading": "warn",
+        "useFencedCodeLanguage": "warn"
       }
     }
   },
