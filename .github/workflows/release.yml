@@ -14,7 +14,7 @@ on:
 
 env:
   # renovate: datasource=node-version depName=node versioning=node
-  NODE_VERSION: 24
+  NODE_VERSION: 26
 
 jobs:
   build:
@@ -35,10 +35,8 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           cache: pnpm
 
-      - name: Enable Corepack
-        run: |
-          corepack enable
-          pnpm i --frozen-lockfile
+      - name: Install dependencies
+        run: pnpm i --frozen-lockfile
 
       - name: 🔬 Lint
         run: pnpm lint
