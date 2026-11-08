@@ -47,7 +47,7 @@
   },
   "markdown": {
     "formatter": {
-      "lineWidth": 100,
+      "lineWidth": 120,
       "proseWrap": "always"
     },
     "linter": {
